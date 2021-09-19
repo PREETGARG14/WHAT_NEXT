@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_add1"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="@string/home"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_add2"
+        android:enabled="true"
+        android:icon="@drawable/addproject"
+        app:showAsAction="never"
+        android:title="@string/add_project"/>
+
+    <item
+        android:id="@+id/menu_add3"
+        android:enabled="true"
+        app:showAsAction="never"
+        android:icon="@drawable/profile"
+        android:title="@string/profile" />
+
+    <item
+        android:id="@+id/menu_add4"
+        android:enabled="true"
+        android:icon="@drawable/event"
+        app:showAsAction="never"
+        android:title="@string/event" />
+
+    <item
+        android:id="@+id/menu_add5"
+        android:enabled="true"
+        app:showAsAction="never"
+        android:icon="@drawable/chat"
+        android:title="@string/chat_now"
+        />
+
+
+
+
+</menu>

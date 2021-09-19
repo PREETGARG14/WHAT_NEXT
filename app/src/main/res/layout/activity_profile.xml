@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:background="@drawable/bgapps">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_profile_image"
+        android:layout_width="250dp"
+        android:layout_height="271dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/person"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="5dp" />
+
+    <EditText
+        android:id="@+id/set_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_profile_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="70dp"
+        android:hint="@string/usernamea"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#262938"
+        android:textColorHint="#262938"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/set_profile_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_user_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/hey_review_my_project"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#FF4081"
+        android:textColorHint="#FF4081"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/update_profile_button"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/set_profile_status"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/bgbtn"
+        android:padding="6dp"
+        android:text="@string/update_profile"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnav"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemIconTint="@drawable/color_state"
+        app:itemTextColor="@drawable/color_state"
+        app:menu="@menu/navigation_item"
+
+        />
+
+</RelativeLayout>

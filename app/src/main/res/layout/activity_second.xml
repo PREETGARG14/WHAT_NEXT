@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second"
+    android:background="@drawable/bgapps">
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/btnav">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="@string/my_dashboard"
+                android:textStyle="bold"
+                android:id="@+id/txtdashboard"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/_12_items"
+                android:layout_below="@+id/txtdashboard"
+                android:layout_marginTop="6dp"
+                android:textStyle="bold"
+                android:id="@+id/items"
+                android:textColor="#52baff"/>
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:src="@drawable/person"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/todo" />
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins"
+            android:rowCount="3"
+            android:columnCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/date"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="People"
+
+                        android:textSize="18dp"
+                        android:textColor="#6f6f6f"
+                        android:layout_marginTop="12dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/contact"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Workshops"
+
+                        android:textSize="18dp"
+                        android:textColor="#6f6f6f"
+                        android:layout_marginTop="12dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/bookmark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/calender"
+
+                        android:textSize="18dp"
+                        android:textColor="#6f6f6f"
+                        android:layout_marginTop="12dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/bitcoin"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/funding"
+
+                        android:textSize="18sp"
+                        android:textColor="#6f6f6f"
+                        android:layout_marginTop="12dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/bug"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/innovations"
+
+                        android:textSize="18sp"
+                        android:textColor="#6f6f6f"
+                        android:layout_marginTop="12dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/chats"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/meetings"
+
+                        android:textSize="18sp"
+                        android:textColor="#6f6f6f"
+                        android:layout_marginTop="12dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/date"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/startups"
+
+                        android:textSize="18sp"
+                        android:textColor="#6f6f6f"
+                        android:layout_marginTop="12dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/contact"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seminars"
+
+                        android:textSize="18sp"
+                        android:textColor="#6f6f6f"
+                        android:layout_marginTop="12dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnav"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemIconTint="@drawable/color_state"
+        app:itemTextColor="@drawable/color_state"
+        app:menu="@menu/navigation_item" />
+
+
+
+
+
+
+
+</RelativeLayout>

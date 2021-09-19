@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/find_New_buddy"
+        app:showAsAction="never"
+        android:title="@string/find_new_buddy" />
+
+    <item
+        android:id="@+id/main_create_group_option"
+        app:showAsAction="never"
+        android:title="@string/create_group" />
+
+
+    <item
+        android:id="@+id/main_settings_option"
+        app:showAsAction="never"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/main_logout"
+        app:showAsAction="never"
+        android:title="@string/logout" />
+
+
+</menu>

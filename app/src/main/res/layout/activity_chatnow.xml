@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".chatnow">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout">
+
+       <include
+           android:id="@+id/main_page_toolbar"
+           layout="@layout/bar_layout">
+       </include>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:id="@+id/main_tabs"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_tabs_pager"
+        android:layout_below="@+id/appBarLayout">
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnav"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemIconTint="@drawable/color_state"
+        app:itemTextColor="@drawable/color_state"
+        app:menu="@menu/navigation_item" />
+
+</RelativeLayout>

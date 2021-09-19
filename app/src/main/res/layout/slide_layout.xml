@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/slide_image"
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginRight="-3dp"
+        android:layout_marginBottom="-3dp"
+        app:srcCompat="@drawable/starting_page_3" />
+
+    <TextView
+        android:id="@+id/slide_heading"
+        android:layout_width="232dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="204dp"
+        android:text="Concurrency"
+        android:textColor="#27396D"
+        android:textSize="30dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/slide_desc"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="147dp"
+        android:text="Reminder for you to take your next step."
+        android:textColor="#262938"
+        android:textSize="20dp" />
+</RelativeLayout>
